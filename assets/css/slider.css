@@ -1,0 +1,12 @@
+#carouselExampleSlidesOnly
+{
+    background-size: 100% 100%;
+    box-shadow: 20px 20px 10px grey;
+    animation: slider 10s linear infinite;
+}
+@keyframes slider{
+    0%{background-image: url(assets/images/unbeatable-one-bg.jpg);}
+    50%{background-image: url(assets/images/spoon-tins-with-spices.jpg);}
+    100%{background-image: url(assets/images/video-two-bg.jpg);}
+
+}
