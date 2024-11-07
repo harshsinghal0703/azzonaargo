@@ -1,0 +1,50 @@
+/* Base Styles */
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+}
+
+.mask-custom {
+    backdrop-filter: blur(20px);
+    background-color: rgba(10, 79, 3, 0.15);
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #0b6b08;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Align the toggle button */
+    }
+}
